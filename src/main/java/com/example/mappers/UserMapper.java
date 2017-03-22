@@ -1,8 +1,11 @@
 package com.example.mappers;
 
 import com.example.entity.User;
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.SelectProvider;
-import org.springframework.stereotype.Component;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Zhangkh on 2017/3/6.
@@ -10,4 +13,6 @@ import org.springframework.stereotype.Component;
 public interface UserMapper {
     @SelectProvider(type = UserSqlProvider.class,method = "get")
     User get(String userName);
+    @SelectProvider(type = UserSqlProvider.class,method = "getData")
+    List<Map> getData();
 }

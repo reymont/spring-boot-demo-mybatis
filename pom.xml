@@ -16,6 +16,7 @@
         <swagger-version>1.5.4</swagger-version>
         <postgresql-version>9.4.1208</postgresql-version>
         <HikariCP-version>2.5.1</HikariCP-version>
+        <logback-version>1.2.1</logback-version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -101,6 +102,16 @@
             <version>${HikariCP-version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-access</artifactId>
+            <version>${logback-version}</version>
+        </dependency>
     </dependencies>
 
     <build>

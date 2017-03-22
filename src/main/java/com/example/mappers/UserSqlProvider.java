@@ -22,4 +22,11 @@ public class UserSqlProvider {
         }.toString();
         */
     }
+    public String getData(){
+        return new SQL()
+                .SELECT("userid,username,deptid,mobile")
+                .FROM("T_USER")
+                .WHERE("deptid='11031'").toString();
+
+    }
 }
