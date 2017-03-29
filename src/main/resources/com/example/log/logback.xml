@@ -137,7 +137,7 @@
     <!-- root级别   DEBUG -->
     <root>
         <!-- 打印debug级别日志及以上级别日志 -->
-        <level value="DEBUG"/>
+        <level value="INFO"/>
         <!-- 控制台输出 -->
         <appender-ref ref="CONSOLE"/>
         <!-- 文件输出 -->
